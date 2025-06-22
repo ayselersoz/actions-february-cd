@@ -21,7 +21,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: Set project
-        run: cloud config set project actions-2025
+        run: gcloud config set project actions-2025
 
       - name: Install gcloud auth plugin
         run: gcloud components install gke-gcloud-auth-plugin
