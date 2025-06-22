@@ -43,3 +43,4 @@ jobs:
 
       - name: Install app
         run: helm upgrade --install flask ./flask --set deployment.image.repository=${{ inputs.image }} --set deployment.image.tag=${{ inputs.tag }}
+        
